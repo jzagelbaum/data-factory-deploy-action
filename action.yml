@@ -43,7 +43,7 @@ runs:
       shell: pwsh
 
     - name: Run ARM deploy
-      uses: azure/arm-deploy@v1
+      uses: azure/arm-deploy@v2
       with:
         resourceGroupName: ${{ inputs.resourceGroupName }}
         template: ${{ inputs.armTemplateFile }}
